@@ -1,0 +1,195 @@
+#about{
+    min-height:85vh;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_title h2{
+font-weight: 600;
+font-size: 2rem;
+text-align: center;
+padding-top: 6.5rem;
+padding-bottom: 2.5rem;
+color:var(--bs-secondary);
+display: block;
+}
+
+.top_row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+  .about_me_image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .about_me_image img{
+    width: 55%;
+    border: 4px solid var(--bs-secondary);
+    border-radius: 50%;
+  }
+  .features{
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding: 0 2px;
+    
+  }
+  .features h5{
+    text-align: center;
+    color: var(--bs-secondary);
+    
+  }
+  .features span{
+    padding:4px;
+    
+  }
+.about_text{
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.accordion{
+    border: 1px solid var(--bs-primary);
+    border-radius: 8px;
+  } 
+  .accordion-header{
+    font-size: 1.1rem;
+  }
+  .accordion-header span{
+    color: var(--bs-secondary);
+    font-weight: 600;
+  }
+  .accordion-body{
+       color: var(--bs-primary)!important; 
+       text-align: justify;
+       font-size: 1rem;
+  } 
+  .accordion_btn button{
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .btn a{
+    text-decoration: none;
+  }
+  
+    /*  ============= Information section */
+    .about_cards{
+      margin-bottom: 1rem;
+      
+    }
+    .about_cards_title{
+      text-align: center;
+      padding: 1.2rem 0;
+    }
+    
+    .card_container{
+      width: 100%;
+    }
+    .bloc-tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .tabs {
+      padding: 15px 0;
+      text-align: center;
+      width: 100%;
+      background-color: var(--bs-white);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background: var(--bs-primary);
+      border-bottom: 1px solid transparent;
+      color: var(--bs-white)
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: var(--bs-secondary)
+    }
+    
+    button {
+      border: 1px solid rgb(109, 106, 106);
+    }
+    .content-tabs {
+      flex-grow : 1;
+      
+    }
+    .content {
+      background: white;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;
+      border: 1px solid var(--bs-primary);
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+
+    Table td{
+       color: var(--bs-primary)!important;
+       font-weight: 600;
+    }
+
+
+    /* ===================Media qualries===================== */
+@media (max-width:768px) {
+  #about{
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+
+  .top_row{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.about_text{
+  padding-top: 1rem;
+  padding-right: 0;
+}
+
+  .tabs {
+      padding: 5px 0;
+      position: relative;
+      outline: none;
+    }
+  
+}
+
+

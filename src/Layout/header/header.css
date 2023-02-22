@@ -1,0 +1,163 @@
+
+.navbar {
+    background-color: var(--bs-primary);
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo{
+font-weight: 600;
+font-size: 1.3rem;
+color: var(--bs-light);
+margin-left: 1.4rem;
+transition: 0.5s;
+}
+.logo span{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--bs-secondary)
+}
+
+.logo:hover{
+color: rgb(180, 177, 196);;
+}
+
+.navbar-nav{
+   justify-content:center!important;
+
+}
+.nav-link .active{
+    color: var(--bs-secondary);
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--bs-light);
+    font-size: 0.9rem;
+    padding: 0 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: rgb(136, 136, 167)!important;
+}
+.nav-link a {
+    position: relative;    
+}
+
+.nav-link a:hover::after{ 
+    width: 100%;  
+}
+
+.nav_img_section img{
+display: none;
+}
+
+.hot_mail{
+    display: flex;
+    margin-left: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--bs-secondary);
+}
+
+.hot_mail_icon {
+     margin-bottom: 0.5rem;
+}
+.navbar-toggler{
+    background-color: var(--bs-light) ; 
+     color: var(--bs-dark);
+}
+
+ span.navbar-toggler-icon{
+    background-color: var(--bs-light)!important;
+    border-radius: 20%;
+}
+
+.contact_section{
+    display: none;
+}
+
+
+/* ==================Offcanvas================= */
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 35%;
+    --bs-offcanvas-height: 100vh;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-bg: var(--bs-primary);
+    --bs-offcanvas-border-width: 1px;
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25remrgba(0, 0, 0, 0.075);
+}
+
+.offcanvas-header button.btn-close{
+    background-color: var(--bs-secondary);
+    
+}
+
+/* Typewritter */
+
+.Typewriter{
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+/*  ==================== Media Qualries======================== */
+
+@media screen and (max-width :992px) {
+
+    .navbar-nav{
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .nav-link a {
+        color: var(--bs-light);
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        text-transform: uppercase; 
+        text-align: center;
+    }
+    .nav-link a:hover {
+        color: var(--bs-secondary);
+    }
+    .nav-link a::after{
+        display: none;
+    }
+    .hot_mail{
+        display: none;
+    }
+    .contact_section{
+        display: block;
+    }
+    
+    .nav_img_section{
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    .nav_img_section img{
+        display: block;
+        width: 70%;
+        border-radius: 50%;
+    }
+    .discover h2{
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--bs-secondary);
+    }
+    .nav_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.3rem;
+        gap: 0.7rem;
+        color: white;
+        font-size: 1.8rem;
+    }
+}
